@@ -66,16 +66,3 @@ SPI.transfer(cmd << 4);   // Voici le second nibble de l'octet que je t'envoie
 | | b7 | b6 | b5 | b4 | b3 | b2 | b1 | b0 |
 |---|---|---|---|---|---|---|---|---|
 | `0x36` | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
-
-## La fonction sendData()
-```cpp
-void sendData(uint8_t dat)
-{
-    digitalWrite(CS, HIGH);
-    SPI.transfer(0xFA);
-    SPI.transfer(dat & 0xF0);
-    SPI.transfer(dat << 4);
-    digitalWrite(CS, LOW);
-    delayMicroseconds(72);
-}
-```
