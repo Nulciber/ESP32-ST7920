@@ -5,14 +5,12 @@ void afficherBitsStandard(uint8_t valeur)
 {
     for (int i = 7; i >= 0; i--)
         printf("%d", (valeur >> i) & 1);
-    printf("  (0x%02x = %d)", valeur, valeur);
+    printf("  (0x%02d = %d)", valeur, valeur);
 }
-
-
 
 int main()
 {
-    uint8_t a = 0x36;
+    uint8_t a = 0x36; 
     uint8_t b = 0xF0;
 
     printf("a         = "); afficherBitsStandard(a); printf("\n");
