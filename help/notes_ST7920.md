@@ -1,4 +1,4 @@
-# Pour envoyer de l'information depuis l'ESP32 à l'écran (protocole ST7920)
+# Pour envoyer de l'information depuis l'ESP32 à l'écran (protocole ST7920) *******
 
 ## La fonction sendCommand()
 

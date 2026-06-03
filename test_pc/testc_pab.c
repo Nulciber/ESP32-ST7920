@@ -9,7 +9,7 @@ void afficherBitsStandard(uint8_t valeur)
                                          // On fait ainsi pour isoler le bit en cours de lecture
                                              
 
-    printf("  (0% = %d)", valeur, valeur);//
+    printf("  (0%02x = %d)", valeur, valeur);//
 }
 int main()
 {
